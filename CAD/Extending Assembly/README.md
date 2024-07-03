@@ -16,6 +16,16 @@ The assembly is complete with belt clamps and a working (in CAD) path for the be
 
 <br>
 
+## Updates
+
+Finished building the extending assembly (excluding bottom plate). 
+![image](https://github.com/morotonai/replac3d/assets/156618723/965c68e4-d963-47bb-8177-f1463c61a009)
+
+Manufactured the plates using a friend's CNC router.
+![image](https://github.com/morotonai/replac3d/assets/156618723/5dc1417a-809d-49e4-9ea2-ddb7b51b687f)
+
+<br>
+
 Below are some screenshots of the current design. For more information on the project, please read the project's README found [here](https://github.com/morotonai/replac3d/tree/main).
 
 Thanks for your interest! Please do not hesitate to contact me with any questions on discord [here](https://discord.com/users/morotonai.3/).
