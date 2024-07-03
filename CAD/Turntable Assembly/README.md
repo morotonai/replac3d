@@ -12,6 +12,18 @@ The turntable assembly is complete with structure and power transmission.
 
 <br>
 
+## Updates
+
+Printed the pulley, received the custom steel plates that I ordered, and finished assembling the whole thing.
+
+I had to add 3D printed spacers on each of the turntable's bearing stacks, as there was not enough clearance for the screwheads.
+
+I also added the covers on both sides for the thrust bearings (previously only one side), as the balls binded to the middle bearing and didn't spin.
+
+https://github.com/morotonai/replac3d/assets/156618723/f7f1f9a5-5898-47ce-b88c-4b0123e87160
+
+<br>
+
 Below are some screenshots of the current design. For more information on the project, please read the project's README found [here](https://github.com/morotonai/replac3d/tree/main).
 
 Thanks for your interest! Please do not hesitate to contact me with any questions on discord [here](https://discord.com/users/morotonai.3/).
