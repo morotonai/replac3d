@@ -2,7 +2,12 @@
 
 This folder contains the CAD files of the electronics used in this project, as well as various mounting for electrical things like drag chains.
 
-Please note that not all dimensions are fully accurate, and nothing has been fully tested.
+I finished assembling it all. Videos are uploaded to this folder. Pictures are below:
+
+![image](https://github.com/morotonai/replac3d/assets/156618723/102d96c6-2b8c-4562-beae-e73d96ac2a44)
+
+![image](https://github.com/morotonai/replac3d/assets/156618723/03c48dbe-d881-4eb4-9b28-815d38c58fea)
+
 
 ## Because the files are too large, I put them into a Google Drive folder below:
 https://drive.google.com/drive/folders/1wvcjFxm6h9ep14Qb6PPWo3LjFd0fDXGs?usp=sharing
