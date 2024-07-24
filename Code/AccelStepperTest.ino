@@ -9,12 +9,16 @@
 #define en1 6
 #define en2 7
 
+#define magnet 10
+
 AccelStepper extension(1, pul1, dir1);
 AccelStepper panning(1, pul2, dir2);
 
 void setParams(){
   pinMode(en1, OUTPUT);
   pinMode(en2, OUTPUT);
+
+  pinMode(magnet, OUTPUT);
 
   extension.setMaxSpeed(10000);
   extension.setAcceleration(10000);
@@ -43,30 +47,61 @@ void extendTo(const String& position) {
     }
 }
 
+void retreive(){
+  digitalWrite(magnet, LOW);
+  extendTo("in");
+  panTo("middle");
+  extendTo("out");
+  delay(500);
+  digitalWrite(magnet, HIGH);
+  delay(500);
+  extendTo("in");
+}
+
+void deposit(){
+  digitalWrite(magnet, HIGH);
+  extendTo("in");
+  panTo("right");
+  extendTo("out");
+  delay(500);
+  digitalWrite(magnet, LOW);
+  delay(500);
+  extendTo("in");
+}
+
+void pickup(){
+  digitalWrite(magnet, LOW);
+  extendTo("in");
+  panTo("left");
+  extendTo("out");
+  delay(500);
+  digitalWrite(magnet, HIGH);
+  delay(500);
+  extendTo("in");
+}
+
+void replace(){
+  digitalWrite(magnet, HIGH);
+  extendTo("in");
+  panTo("middle");
+  extendTo("out");
+  delay(500);
+  digitalWrite(magnet, LOW);
+  delay(500);
+  extendTo("in");
+}
+
 void setup() {
   // put your setup code here, to run once:
   setParams();
 
-  panTo("middle");
-  extendTo("out");
-  extendTo("in");
-
-  panTo("right");
-  extendTo("out");
-  extendTo("in");
-
-  panTo("left");
-  extendTo("out");
-  extendTo("in");
-
-  panTo("middle");
-  extendTo("out");
-  extendTo("in");
-
+  retrieve();
+  deposit();
+  pickup();
+  replace(); 
 }
 
 
 void loop() {
   // put your main code here, to run repeatedly:
-
 }
