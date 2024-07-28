@@ -20,11 +20,11 @@ void setParams(){
 
   pinMode(magnet, OUTPUT);
 
-  extension.setMaxSpeed(10000);
-  extension.setAcceleration(10000);
+  extension.setMaxSpeed(8000);
+  extension.setAcceleration(8000);
   
-  panning.setMaxSpeed(2000);
-  panning.setAcceleration(2000);
+  panning.setMaxSpeed(1000);
+  panning.setAcceleration(1000);
 }
 
 void panTo(const String& direction) {
@@ -47,47 +47,47 @@ void extendTo(const String& position) {
     }
 }
 
-void retreive(){
-  digitalWrite(magnet, LOW);
-  extendTo("in");
+void retrieve(){
+  //digitalWrite(magnet, LOW);
+  //extendTo("in");
   panTo("middle");
   extendTo("out");
-  delay(500);
-  digitalWrite(magnet, HIGH);
-  delay(500);
+  //delay(500);
+  //digitalWrite(magnet, HIGH);
+  //delay(500);
   extendTo("in");
 }
 
 void deposit(){
   digitalWrite(magnet, HIGH);
-  extendTo("in");
+  //extendTo("in");
   panTo("right");
   extendTo("out");
-  delay(500);
+  //delay(500);
   digitalWrite(magnet, LOW);
-  delay(500);
+  //delay(500);
   extendTo("in");
 }
 
 void pickup(){
   digitalWrite(magnet, LOW);
-  extendTo("in");
+  //extendTo("in");
   panTo("left");
   extendTo("out");
-  delay(500);
+  //delay(500);
   digitalWrite(magnet, HIGH);
-  delay(500);
+  //delay(500);
   extendTo("in");
 }
 
 void replace(){
   digitalWrite(magnet, HIGH);
-  extendTo("in");
+  //extendTo("in");
   panTo("middle");
   extendTo("out");
-  delay(500);
+  //delay(500);
   digitalWrite(magnet, LOW);
-  delay(500);
+  //delay(500);
   extendTo("in");
 }
 
@@ -96,9 +96,9 @@ void setup() {
   setParams();
 
   retrieve();
-  deposit();
-  pickup();
-  replace(); 
+  //deposit();
+  //pickup();
+  //replace(); 
 }
 
 
