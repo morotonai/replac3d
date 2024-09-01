@@ -2,6 +2,8 @@
 
 The replac3d project is a robot that replaces the build plate of a Bambu Lab P1 and X1 series 3D printer.
 
+I am especially proud of this project because it was is first personal technical project. I had no electronics knowledge prior, and had to learn all about stepper motors, driver boards, soldering, and code. All parts of the build are custom, and most were manufactured in-house with a CNC router!
+
 The inspiration for this project came from my robotics competition season. I had to print many parts quickly for rapid prototyping, but couldn't remove a print after it finished due to my commitments (some of which are several hours long), wasting printing time. 
 
 I did quite some research and noticed the following faults in existing solutions.
@@ -15,3 +17,5 @@ I was also inspired by the Prusa AFS system, but it is way too large, and grasps
 Because of this, I decided to use 4 electromagnets to magnetically attract the build plate, overcoming the strength of the bed magnet.
 
 This project is still in progress, and will be periodically updated.
+
+Here is a YouTube link with a demo video! https://www.youtube.com/watch?v=nJoyHpohkoQ
